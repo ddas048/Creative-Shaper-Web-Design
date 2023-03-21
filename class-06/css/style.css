@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+body{
+    height: 1000px;
+}
+/* header start */
+.paka_body{
+    width: 800px;
+    height: 400px;
+    background: #017d2e;
+    position: relative;
+}
+.paka_round{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: #b10f0f;
+    position: absolute;
+    left: 300px;
+    top: 100px;
+}
+.paka_marka{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    position: absolute;
+    left: 350px;
+    top: 150px;
+}
+.paka_marka img{
+    width: 100%;
+}
+.box{
+    height: 40px;
+    width: 40px;
+    background: #000;
+    position: fixed;
+    right: 15px;
+    bottom: 50px;
+    z-index: 999;
+}
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+    height: 200px;
+}
+.wrapper h3{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #000;
+    font-weight: bold;
+    margin: 25px 0px;
+    padding: 50px 0px;
+    text-align: center;
+    position: relative;
+}
+.wrapper h3::before{
+    position: absolute;
+    left:37%;
+    top: 45px;
+    height: 5px;
+    width: 10px;
+    background: #000;
+    content: '';
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+.wrapper h3::after{
+    position: absolute;
+    right:37%;
+    bottom: 45px;
+    height: 5px;
+    width: 10px;
+    background: #000;
+    content: '';
+    opacity: 0;
+    transition: all linear 0.4s; 
+}
+.wrapper h3:hover::after{
+    width: 120px;
+    opacity: 1;
+}
+.wrapper h3:hover::before{
+    width: 120px;
+    opacity: 1;
+}
+
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+    height: 200px;
+}
+.wrapper2 h3{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #000;
+    font-weight: bold;
+    margin: 25px 0px;
+    padding: 50px 0px;
+    text-align: center;
+    position: relative;
+}
+.wrapper2 h3::before{
+    position: absolute;
+    left:37%;
+    top: 45px;
+    height: 0px;
+    width: 5px;
+    background: #000;
+    content: '';
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+.wrapper2 h3::after{
+    position: absolute;
+    right:37%;
+    bottom: 45px;
+    height: 0px;
+    width: 5px;
+    background: #000;
+    content: '';
+    opacity: 0;
+    transition: all linear 0.4s; 
+}
+.wrapper2 h3:hover::after{
+   height: 50px;
+    opacity: 1;
+}
+.wrapper2 h3:hover::before{
+    height: 50px;
+    opacity: 1;
+}
+.padd_mar{
+    height: 100px;
+    width: 100px;
+    background: #000;
+    padding: 50px 30px 100px 50px;
+    margin:  50px 30px 100px 50px;
+    /* padding-top: ;
+    padding-left: ;
+    padding-right: ;
+    padding-bottom: ;
+    margin-top: ;
+    margin-bottom: ;
+    margin-left: ;
+    margin-right: ; */
+}
+.sty{
+    height: 100px;
+    width: 960px;
+    background: #000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}

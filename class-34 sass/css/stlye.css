@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0; }
+
+a,
+a:hover {
+  text-decoration: none;
+  color: #000; }
+
+ul,
+ol {
+  list-style-type: none; }
+
+img {
+  vertical-align: middle; }
+
+body {
+  font-family: 'Rubik', sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+img,
+input,
+label,
+form,
+.navbar,
+button,
+.btn,
+textarea,
+span,
+section,
+div,
+ul,
+ol,
+li,
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0; }
+
+/* VariablesVariables start */
+/* VariablesVariables end */
+/* Mixins start */
+/* Mixins end */
+/* Extend/Inheritance start */
+.banner_part .banner_item h1 {
+  font-size: 56px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #2c3754; }
+
+.common_heading h3 {
+  color: #222222;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize; }
+
+.working_progress_part .working_progress_item h4 {
+  color: #ffffff;
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 700; }
+
+.common_heading h6, .working_progress_part .working_progress_item h5 {
+  color: #ab6db0;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 15px; }
+
+.banner_part .banner_item p, .working_progress_part .working_progress_item p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400; }
+
+.header_part .menu .nav-item .nav-link {
+  color: #ab6db0;
+  font-size: 18px;
+  text-transform: uppercase;
+  -webkit-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+  font-weight: 400; }
+
+.banner_part .banner_item a {
+  padding: 10px 40px;
+  -webkit-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -o-border-radius: 35px;
+  border-radius: 35px;
+  background: #ab6db0;
+  color: #000000;
+  font-size: 20px;
+  text-transform: capitalize;
+  box-shadow: 0 0 15px rgba(171, 109, 176, 0.9);
+  margin: 15px; }
+
+.working_progress_part, .about_part {
+  padding: 90px 0px; }
+
+/* Extend/Inheritance end */
+/* header_part start */
+.header_part {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999; }
+  .header_part .navbar-brand img {
+    padding: 25px 0px; }
+  .header_part .menu .nav-item .nav-link {
+    padding: 50px 15px; }
+  .header_part .menu .nav-item:hover .nav-link {
+    color: #000000; }
+  .header_part .menu .active .nav-link {
+    color: #000000; }
+
+/* header_part end */
+/* banner_part start */
+.banner_part {
+  background: url(../images/banner/banner.png);
+  background-position: 30% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1);
+  padding: 270px 0px 160px;
+  position: relative; }
+  .banner_part .banner_item h1 {
+    padding-bottom: 30px; }
+  .banner_part .banner_item p {
+    color: #444444;
+    padding-bottom: 50px; }
+
+/* banner_part end */
+.common_heading {
+  padding-bottom: 30px; }
+
+/* working_progress_part start */
+.working_progress_part .working_progress_item {
+  padding: 30px 15px;
+  margin-top: 30px;
+  background: #ab6db0;
+  -webkit-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+  .working_progress_part .working_progress_item h5 {
+    color: #ffffff;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #a71bb2;
+    font-weight: 700;
+    margin-top: 15px;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; }
+  .working_progress_part .working_progress_item h4 {
+    color: #ffffff;
+    padding-bottom: 5px; }
+  .working_progress_part .working_progress_item p {
+    color: #ffffff; }
+
+/* working_progress_part end */
+/* about_part start */
+/* about_part end */
+
+/*# sourceMappingURL=stlye.css.map */

@@ -1,0 +1,226 @@
+/*// extra-Small devices (portrait phones, 320px and up to 575px)*/
+@media (min-width: 320px) and (max-width: 575px) {
+    .header_part {
+        background: #fff;
+    }
+
+    .header_part .navbar-light .navbar-toggler {
+        color: #ab6db0;
+        ;
+        border-color: #ab6db0;
+    }
+
+    .header_part .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(171, 109, 176);' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .menu .nav-item .nav-link {
+        padding: 10px 22px;
+        text-align: center;
+    }
+
+    .menu .nav-item .nav-link.extra_btn {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .banner_part {
+        background: url(../images/banner/banner.png);
+        background-position: left right;
+        padding: 170px 0px 50px;
+    }
+
+    .banner_item h1 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .banner_item p {
+        font-size: 14px;
+        padding-bottom: 30px;
+    }
+
+    .working_progress_part {
+        padding: 50px 0px;
+    }
+
+    .common_heading h6 {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .common_heading h3 {
+        font-size: 26px;
+    }
+
+    .about_content h3 {
+        font-size: 28px;
+    }
+
+    .about_content p {
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+
+    .our_service_part {
+        padding: 50px 0px;
+    }
+
+    .portfolio_part {
+        padding: 50px 0px;
+    }
+
+    .overlay_video_part_img_img a {
+        height: 60px;
+        width: 60px;
+    }
+
+    .overlay_video_part_img_img a i {
+        line-height: 60px;
+        font-size: 25px;
+    }
+
+    .test_slide_item p {
+        padding: 0px 15px 20px;
+    }
+
+    .arrow_right1 {
+        right: 40%;
+    }
+
+    .arrow_left1 {
+        left: 40%;
+    }
+
+    .message_content h2 {
+        font-size: 27px;
+    }
+
+    .message_content.text-end {
+        text-align: left !important;
+    }
+
+    .content_footer ul.d-flex {
+        display: inherit !important;
+    }
+
+    .content_footer ul .nav-item .nav-link {
+        font-size: 16px;
+        padding: 5px 0px;
+    }
+
+    .content_footer ul li a i {
+        font-size: 22px;
+        margin: 3px;
+    }
+}
+
+
+/*// Small devices (landscape phones, 576px and up to 767px )*/
+@media (min-width: 576px) and (max-width: 767px) {
+    .menu .nav-item .nav-link {
+        padding: 22px 4px;
+        font-size: 14px;
+    }
+
+    .menu .nav-item .nav-link.extra_btn {
+        padding: 10px 12px;
+        font-size: 14px;
+        margin-left: 12px;
+        margin-top: 13px;
+    }
+
+    .banner_part {
+        background-position: 30% 70%;
+        padding: 170px 0px 100px;
+    }
+
+    .banner_item h1 {
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
+    .banner_item p {
+        font-size: 14px;
+        padding-bottom: 30px;
+    }
+
+    .common_heading h3 {
+        font-size: 30px;
+    }
+
+    .working_progress_part {
+        padding: 70px 0px;
+    }
+
+    .about_content h3 {
+        font-size: 30px;
+    }
+
+    .our_service_item h4 {
+        font-size: 22px;
+    }
+
+    .our_service_item p {
+        font-size: 14px;
+    }
+
+    .our_service_part {
+        padding: 70px 0px;
+    }
+
+    .portfolio_part {
+        padding: 70px 0px;
+    }
+
+    .team_part {
+        padding: 70px 0px;
+    }
+
+    .arrow_left1 {
+        left: 45%;
+    }
+
+    .arrow_right1 {
+        right: 45%;
+    }
+
+    .testomonial_part {
+        padding: 0px 0px 70px;
+    }
+
+    .message_content h2 {
+        font-size: 29px;
+    }
+
+    .message_content a.btn {
+        padding: 10px 24px;
+    }
+
+    .pakage_part {
+        padding: 70px 0px;
+    }
+
+    .pakage_item h5 {
+        padding: 10px 17px;
+    }
+
+    .content_footer ul .nav-item .nav-link {
+        font-size: 16px;
+        padding: 10px 9px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up 991px) */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/* // Large  devices ( 992px and up 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* // X-Large devices (large desktops, 1200px and up 1399px ) */
+@media (min-width: 1200px) (max-width: 1399px) {}
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

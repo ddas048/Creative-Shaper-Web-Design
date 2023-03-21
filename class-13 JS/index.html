@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>class-13</title>
+    <style>
+        .namta {
+            padding: 10px;
+            margin: 10px;
+            border: 10px;
+            background: #f1f1f1;
+            float: left;
+            color: #000;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 id="hello"></h3>
+    <script>
+        alert('welcome to creative shaper');
+        document.getElementById("hello").innerHTML = "welcome to creative shaper";
+        document.write('welcome to creative shaper');
+        console.log("welcome to creative shaper student ");
+    </script>
+    <br>
+    <script>
+        var a = 50;
+        var b = 60;
+        var c = (a * b);
+        document.write(c);
+    </script>
+    <br>
+    <script>
+        var a;
+        for (a = 1; a <= 1000; a++) {
+            document.write(a + ', ');
+        }
+    </script>
+    <br>
+    <script>
+        var a;
+        for (a = 2; a <= 100; a = a + 2) {
+            document.write(a + ', ');
+        }
+    </script>
+    <br>
+    <script>
+        var a;
+        for (a = 1; a <= 100; a = a + 2) {
+            document.write(a + ', ');
+        }
+    </script>
+    <br>
+    <script>
+        var a;
+        var b;
+        for (a = 1; a <= 100; a++) {
+            document.write('<div class="namta">')
+            for (b = 1; b <= 10; b++) {
+                var run = (a * b);
+                document.write(a + " X " + b + " = " + run + "<br>");
+            }
+            document.write('</div>');
+        }
+    </script>
+    <br>
+    <p id="demo"></p>
+
+    <script>
+        var text = "";
+        var i = 0;
+        while (i <= 100) {
+            text += "<br>The number is " + i;
+            i++;
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+    <p id="demo_one"></p>
+
+    <script>
+        var text = ""
+        var i = 0;
+
+        do {
+            text += "<br>The number is " + i;
+            i++;
+        }
+        while (i < 10);
+
+        document.getElementById("demo_one").innerHTML = text;
+    </script>
+
+    <p id="demo_two"></p>
+
+    <script>
+        var day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+        }
+        document.getElementById("demo_two").innerHTML = "Today is " + day;
+    </script>
+
+
+</body>
+
+</html>

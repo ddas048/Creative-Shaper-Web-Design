@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+img,
+input,
+label,
+form,
+.navbar,
+button,
+.btn,
+textarea,
+span,
+section,
+div,
+ul,
+ol,
+li,
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+/* VariablesVariables start */
+$c1: #000000;
+$c2: #ffffff;
+$c3: #b19cb2;
+$c4: #2c3754;
+$c5: #ab6db0;
+$c6: #a71bb2;
+$c7: #444444;
+$c8: #222222;
+/* VariablesVariables end */
+
+/* Mixins start */
+@mixin tr($time) {
+    -webkit-transition: all linear $time;
+    -ms-transition: all linear $time;
+    -moz-transition: all linear $time;
+    -o-transition: all linear $time;
+    transition: all linear $time;
+}
+
+@mixin br($val) {
+    -webkit-border-radius: $val;
+    -ms-border-radius: $val;
+    -moz-border-radius: $val;
+    -o-border-radius: $val;
+    border-radius: $val;
+}
+
+/* Mixins end */
+
+/* Extend/Inheritance start */
+%h1 {
+    font-size: 56px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: $c4;
+}
+
+%h3 {
+    color: $c8;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+%h4 {
+    color: $c2;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+%h6 {
+    color: $c5;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+%p {
+    color: $c2;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+%a {
+    color: $c5;
+    font-size: 18px;
+    text-transform: uppercase;
+    @include tr(0.4s);
+    font-weight: 400;
+}
+
+%btn_com {
+    padding: 10px 40px;
+    @include br(35px);
+    background: $c5;
+    color: $c1;
+    font-size: 20px;
+    text-transform: capitalize;
+    box-shadow: 0 0 15px rgba(171, 109, 176, 0.9);
+    margin: 15px;
+}
+
+%py_90 {
+    padding: 90px 0px;
+}
+
+/* Extend/Inheritance end */
+
+/* header_part start */
+.header_part {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+    .navbar-brand {
+        img {
+            padding: 25px 0px;
+        }
+    }
+
+    .menu {
+        .nav-item {
+            .nav-link {
+                @extend %a;
+                padding: 50px 15px;
+            }
+
+            &:hover {
+                .nav-link {
+                    color: $c1;
+                }
+            }
+
+        }
+
+        .active {
+            .nav-link {
+                color: $c1;
+            }
+        }
+    }
+}
+
+/* header_part end */
+
+/* banner_part start */
+.banner_part {
+    background: url(../images/banner/banner.png);
+    background-position: 30% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1);
+    padding: 270px 0px 160px;
+    position: relative;
+
+    .banner_item {
+        h1 {
+            @extend %h1;
+            padding-bottom: 30px;
+        }
+
+        p {
+            @extend %p;
+            color: $c7;
+            padding-bottom: 50px;
+        }
+
+        a {
+            @extend %btn_com;
+        }
+    }
+}
+
+/* banner_part end */
+.common_heading {
+    padding-bottom: 30px;
+
+    h6 {
+        @extend %h6;
+    }
+
+    h3 {
+        @extend %h3;
+    }
+}
+
+/* working_progress_part start */
+.working_progress_part {
+    @extend %py_90;
+
+    .working_progress_item {
+        padding: 30px 15px;
+        margin-top: 30px;
+        background: #ab6db0;
+        @include br(10px);
+
+        h5 {
+            @extend %h6;
+            color: $c2;
+            height: 60px;
+            width: 60px;
+            line-height: 60px;
+            text-align: center;
+            background: $c6;
+            font-weight: 700;
+            margin-top: 15px;
+            @include br(50%);
+        }
+        h4{
+            @extend %h4; 
+            color: $c2;
+            padding-bottom: 5px;
+        }
+        p{
+             @extend %p; 
+            color: $c2;
+        }
+    }
+}
+
+/* working_progress_part end */
+
+/* about_part start */
+.about_part{
+     @extend %py_90; 
+}
+/* about_part end */

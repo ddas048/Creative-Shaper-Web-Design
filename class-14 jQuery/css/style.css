@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+body{
+    position: relative;
+}
+.box {
+    height: 400px;
+    width: 400px;
+    background: #000;
+    margin: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background: #000;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    border: 0;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin: 10px;
+}
+
+.box1 {
+    background: #1488b2;
+}
+
+.bbb {
+    height: 500px;
+    width: 500px;
+}
+
+.box2 {
+    background: rgba(9, 185, 185, 0.85);
+}
+
+.box4 {
+    background: #98bf21;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+}
